@@ -2,6 +2,7 @@
 Option Strict On
 
 
+
 Module Module1
     ' if a1=a2=a3 then win etc. (Define winners)
 
@@ -10,8 +11,8 @@ Module Module1
 
     Sub Main()
 
-        For i = 0 To 8
-
+        For i = 1 To 10
+            Console.WriteLine($"It is {currentPlayer()}'s Turn")
         Next
 
         Console.ReadLine()
@@ -61,7 +62,7 @@ Module Module1
         Static _currentPlayer As String
 
         Select Case _currentPlayer
-            Case "x"
+            Case "X"
                 _currentPlayer = "O"
             Case Else
                 _currentPlayer = "X"
