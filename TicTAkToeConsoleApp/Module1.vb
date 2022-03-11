@@ -8,6 +8,9 @@ Module Module1
 
     'store game/trun data. "X", "O", or " "
     Private gameBoardData(2, 2) As String
+    Dim rows As Integer = 2
+    Dim Columns As Integer = 2
+
 
     Sub Main()
 
@@ -28,16 +31,16 @@ Module Module1
     End Function
 
     Private Function CheckRows() As String
-        'TODO
+        'TODO Need to check rows to verify if all three are the same character
         Return ""
     End Function
 
     Private Function CheckColumns() As String
-        'TODO
+        'TODO Need to check Columns to verify if all three are the same character
         Return ""
     End Function
     Private Function CheckDiagonals() As String
-        'TODO
+        'TODO Need to check the two Diagonals to verify if all three are the same character
         Return ""
     End Function
     Private Sub turn()
